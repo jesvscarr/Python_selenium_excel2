@@ -4,7 +4,7 @@ import time
 
 
 class AmazonPage:
-    def __init__(self, driver):  # Asegúrate de que el constructor acepte un parámetro 'driver'
+    def __init__(self, driver):  
         self.driver = driver
         self.search_box = (By.ID, "twotabsearchtextbox")
         self.results = (By.XPATH, '//div[contains(@class, "s-result-item")]')

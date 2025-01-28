@@ -26,8 +26,8 @@ def search_and_save_to_excel():
         falabella.search("libros")
     #    data.extend(falabella.get_results())
 
-        print(f"Datos extraídos: {data}")  # Verifica si hay datos en la lista
-        if data:  # Solo guarda el archivo si hay datos
+        print(f"Datos extraídos: {data}")   
+        if data:   
             df = pd.DataFrame(data)
             df.to_excel("resultados_busquedas.xlsx", index=False)
             print("Datos guardados en 'resultados_busquedas.xlsx' exitosamente.")
@@ -36,7 +36,7 @@ def search_and_save_to_excel():
     except Exception as e:
         print(f"Error en la ejecución general: {e}")
     finally:
-        driver.quit()  # Alineado correctamente con el bloque 'try' y 'except'
+        driver.quit()   
 
 # Ejecutar la función
 if __name__ == "__main__":
